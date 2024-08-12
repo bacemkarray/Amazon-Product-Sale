@@ -1,1 +1,1 @@
-# Amazon-Product-Sale
+This program takes in an Amazon's product ASIN number and (using EC2 scheduling) once a day will run to observe any price changes in the product. If a price change is detected, an email will be sent to the user's provided email letting them know.
