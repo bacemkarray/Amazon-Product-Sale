@@ -47,5 +47,5 @@ productPriceOriginal = str(jsonFormat['data']['product_original_price']).replace
 
 #Checks to see if there's a sale, if so will call email function
 if productPriceOriginal != "None": 
-    if float(productPriceCurrent) <= float(productPriceOriginal):
+    if float(productPriceCurrent) < float(productPriceOriginal):
         send_email(jsonFormat['data']['product_url'], password)
